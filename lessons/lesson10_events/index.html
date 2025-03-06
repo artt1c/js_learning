@@ -40,6 +40,62 @@
     .hide {
       display: none;
     }
+
+    table {
+      border-collapse: collapse;
+      border: 2px solid rgb(140 140 140);
+      font-family: sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      background-color: rgb(228 240 245);
+    }
+
+    th,
+    td {
+      border: 1px solid rgb(160 160 160);
+      padding: 8px 10px;
+    }
+
+    td:last-of-type {
+      text-align: center;
+    }
+
+    tbody > tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    .navBtn {
+      margin: auto 0;
+      width: 200px;
+    }
+    .container {
+      display: flex;
+      gap: 10px;
+      width: 100%;
+      height: 100px;
+      padding: 10px;
+      margin: 0 auto;
+      background-color: #4d4c4c;
+    }
+    .item {
+      width: 10%;
+      height: 100px;
+      background-color: #fff;
+    }
   </style>
 </head>
 <body>
@@ -54,14 +110,18 @@
 
 <!--<div class="popup">hello</div>-->
 
+
+<h2>TASK 1</h2>
 <button id="hide-text">Сховати текст</button>
 <h1 id="text">Some text</h1>
 
+<h2>TASK 2</h2>
 <form name="f1">
   <input type="number" name="age">
   <button>Підтвердити</button>
 </form>
 
+<h2>TASK 3</h2>
 <div id="task3">
   <form name="f2">
     <input type="text" name="name">
@@ -70,6 +130,43 @@
     <button>Відправити</button>
   </form>
   <div class="user-object"></div>
+</div>
+
+<h2>TASK 4</h2>
+<div class="load-counter">0</div>
+
+<h2>TASK 6</h2>
+<form name="convertWeight">
+  <div>Kilograms</div>
+  <input type="number" name="kilograms">
+  <div>Pounds</div>
+  <input type="number" name="pounds">
+</form>
+
+<h2>TASK 8</h2>
+<form name="tableConstructor">
+  <input type="number" name="rowCount">
+  <input type="number" name="columCount">
+  <input name="content">
+  <button>Створити табличку</button>
+</form>
+<table class="dynamicTable">
+  <thead>Це динамічна табличка</thead>
+  <tbody id="tbody"></tbody>
+</table>
+
+<h2>TASK 9</h2>
+<div id="money"></div>
+
+<h2>TASK 10</h2>
+<div>
+  <div class="navBtn" >
+    <button id="navPrev">prev</button>
+    <button id="navNext">next</button>
+  </div>
+  <div class="container">
+
+  </div>
 </div>
 
 <script src="homeworks.js"></script>

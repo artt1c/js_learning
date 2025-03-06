@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .sessionLogTable {
+        padding: 15px;
+        padding-top: 10px;
+        width: 500px;
+        background-color: #cfc8c8;
+        border-radius: 8px;
+    }
+    .sessionLogTable li {
+        display: flex;
+        flex-direction: row;
+        gap: 10px 5px;
+        margin: 3px 0;
+    }
+    .sessionLogTable li:first-child  {
+        margin-bottom: 5px;
+        border-bottom: 2px solid black;
+        border-radius: 4px;
+    }
+    .sessionLogTable li div {
+        flex-grow: 1;
+        width: 60px;
+        padding: 0 8px;
+        border-radius: 4px;
+        text-align: center;
+        background-color: #ffe6e6;
+    }
+  </style>
+</head>
+<body>
+
+<ul class="sessionLogTable">
+  <li class="tags">
+    <div>Місяць</div>
+    <div>День</div>
+    <div>Час</div>
+    <div>Хвилина</div>
+    <div>Секунда</div>
+  </li>
+</ul>
+
+<script src="sessionRead.js"></script>
+
+</body>
+</html>
