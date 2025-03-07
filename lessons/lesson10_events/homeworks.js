@@ -129,7 +129,7 @@ tableConstructorForm.addEventListener('submit', function (ev) {
 window.addEventListener("load", function () {
   let money = localStorage.getItem('money') || 100;
   setTimeout(function () {
-    money = parseInt(money) + 10;
+    money = +money + 10;
     localStorage.setItem('money', money);
   }, 10000);
   let divMoney = document.getElementById('money');
