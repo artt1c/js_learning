@@ -66,8 +66,11 @@ ul {
 /* Recipe */
 
 .recipes__list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-auto-rows: auto;
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
     gap: 10px;
     width: 100%;
     padding: 20px;
@@ -76,6 +79,7 @@ ul {
 
 .recipe {
     width: 280px;
+    /*height: auto;*/
     padding: 6px;
     border-radius: 16px;
     border: 1px solid #3c3b3b;

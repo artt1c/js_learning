@@ -101,7 +101,7 @@ function task1() {
 function task2() {
   // Формуємо URL
   const url = new URL('https://dummyjson.com/recipes');
-  url.searchParams.set('limit', '5');
+  url.searchParams.set('limit', '50');
 
   // Створюємо елемент, в якому будуть всі кошики
   const recipeList = document.createElement('section');
@@ -252,4 +252,4 @@ function task2() {
     });
 }
 
-task2();
+// task2();
